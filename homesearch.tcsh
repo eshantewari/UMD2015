@@ -1,0 +1,1 @@
+find ~ -name "*$1*" -print > homesearch_$1.txt
