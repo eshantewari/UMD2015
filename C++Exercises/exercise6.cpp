@@ -1,8 +1,8 @@
 /*
- * angle.cpp
+ * Linux and C++ Exercise 6
  *
  *  Created on: Jul 13, 2015
- *      Author: eshan
+ *      Author: Eshan Tewari
  */
 
 
@@ -13,6 +13,7 @@
 
 using namespace std;
 
+//return the dot product of two vectors
 double dotproduct(vector<double> v1, vector<double> v2){
 	int product = 0;
 	for(int i = 0; i < v1.size(); i++){
@@ -21,6 +22,7 @@ double dotproduct(vector<double> v1, vector<double> v2){
 	return product;
 }
 
+//return the magnitude of a vector
 double magnitude(vector<double> v){
 	int sum = 0;
 	for(int i = 0; i < v.size(); i++){
@@ -29,6 +31,7 @@ double magnitude(vector<double> v){
 	return sqrt(sum);
 }
 
+//calculate the angle between two vectors
 int main(){
 	int size;
 	cout << "Enter size of array: " << endl;
@@ -47,7 +50,18 @@ int main(){
 		cin >> temp;
 		v2.at(i) = temp;
 	}
-
+	cout << "Vector 1: " << endl;
+	cout << "<";
+	for(int i = 0; i < size-1; i++){
+		cout << v1.at(i) << ", ";
+	}
+	cout << v1.at(size-1) << ">" << endl;
+	cout << "Vector 2: " << endl;
+	cout << "<";
+	for(int i = 0; i < size-1; i++){
+		cout << v2.at(i) << ", ";
+	}
+	cout << v2.at(size-1) << ">" << endl;
 	double angle = acos(dotproduct(v1, v2)/(magnitude(v1)*magnitude(v2)));
 	cout << "Angle: " << angle;
 

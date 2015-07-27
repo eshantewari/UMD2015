@@ -1,8 +1,8 @@
 /*
- * exercise5.cpp
+ * Linux and C++ Exercise 5
  *
  *  Created on: Jul 13, 2015
- *      Author: eshan
+ *      Author: Eshan Tewari
  */
 
 #include <iostream>
@@ -12,7 +12,7 @@
 using namespace std;
 
 
-
+//Calculate the dot product of two vectors
 int main(){
 	int size;
 	cout << "Enter size of array: " << endl;
@@ -36,6 +36,18 @@ int main(){
 	for(int i = 0; i < size; i++){
 		product += v1.at(i)*v2.at(i);
 	}
+	cout << "Vector 1: " << endl;
+	cout << "<";
+	for(int i = 0; i < size-1; i++){
+		cout << v1.at(i) << ", ";
+	}
+	cout << v1.at(size-1) << ">" << endl;
+	cout << "Vector 2: " << endl;
+	cout << "<";
+	for(int i = 0; i < size-1; i++){
+		cout << v2.at(i) << ", ";
+	}
+	cout << v2.at(size-1) << ">" << endl;
 	cout << "Dot Product: "<< product;
 	return 0;
 }
