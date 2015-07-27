@@ -1,0 +1,7 @@
+  * What causes the strange behavior in the transverse momentum plots?  
+  * Looking at the pseudorapidity plot, what can you say about the CMS detector?
+  
+  The CMS detector best measures particles with 0 rapidity and can measure particles with rapidities ranging from roughly
+  -2.5 to 2.5
+  
+  * How could these distributions inform our selection of electrons?

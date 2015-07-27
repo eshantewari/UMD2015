@@ -1,0 +1,6 @@
+  TFile *f = new TFile("Dielectron_MC_outBarrel.root"); 
+
+  f.ls(); 
+  
+ TH1F * mass = (TH1F*)f.Get("Z_ee"); 
+  mass->Draw(); 

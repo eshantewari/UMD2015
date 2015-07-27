@@ -1,0 +1,5 @@
+* Compare the black and blue curves with plots in the original data and MC files. Do you see any
+    difference?
+    There is a significantly sharper spike in the data, and the spike is in a different location
+   * From this comparison what can you say about these distributions?
+   There is far less variation in the actual data as compared to the MC simulation
