@@ -1,7 +1,5 @@
 void exercise8() {
-  //Draw a graph with error bars
-  // To see the output of this macro, click begin_html <a href="gif/gerrors.gif">here</a>. end_html
-  //Author: Rene Brun
+
    
   TCanvas *c1 = new TCanvas("c1","A Simple Graph with error bars",200,10,700,500);
 
@@ -16,7 +14,7 @@ void exercise8() {
   Float_t ex[n] = {.01,.01,.01,.01,.01,.01};
   Float_t ey[n] = {.5,.5,.5,.5,.5,.5};
   TGraphErrors *gr = new TGraphErrors(n,x,y,ex,ey);
-  gr->SetTitle("TGraphErrors Example");
+  gr->SetTitle("Errors");
   gr->SetMarkerColor(4);
   gr->SetMarkerStyle(21);
   gr->Draw("AP");
