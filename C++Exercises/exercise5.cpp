@@ -25,7 +25,7 @@ int main(){
 		cin >> temp;
 		v1.at(i) = temp;
 	}
-	cout << "Enter vector 2 values" << endl;
+	cout << "Enter vector 2 values separated by space" << endl;
 	for(int i = 0; i < size; i++){
 		int temp;
 		cin >> temp;
@@ -48,6 +48,6 @@ int main(){
 		cout << v2.at(i) << ", ";
 	}
 	cout << v2.at(size-1) << ">" << endl;
-	cout << "Dot Product: "<< product;
+	cout << "Dot Product: "<< product << endl;
 	return 0;
 }

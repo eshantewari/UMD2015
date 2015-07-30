@@ -38,13 +38,13 @@ int main(){
 	cin >> size;
 	vector<double> v1(size);
 	vector<double> v2(size);
-	cout << "Enter vector 1 values separated by spaces" << endl;
+	cout << "Enter vector 1 values" << endl;
 	for(int i = 0; i < size; i++){
 		int temp;
 		cin >> temp;
 		v1.at(i) = temp;
 	}
-	cout << "Enter vector 2 values separated by spaces" << endl;
+	cout << "Enter vector 2 values" << endl;
 	for(int i = 0; i < size; i++){
 		int temp;
 		cin >> temp;
@@ -63,7 +63,7 @@ int main(){
 	}
 	cout << v2.at(size-1) << ">" << endl;
 	double angle = acos(dotproduct(v1, v2)/(magnitude(v1)*magnitude(v2)));
-	cout << "Angle (Radians): " << angle << endl;
+	cout << "Angle: " << angle;
 
 	return 0;
 }
