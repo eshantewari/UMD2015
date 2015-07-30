@@ -135,7 +135,7 @@ void trackMC(){
             
             
             //smear the coordinates of x1-y1
-            float epsilon = 10*pow(10,-4); //error in measurement perpendicular to the radial segment
+            float epsilon = 10*pow(10,-6); //error in measurement perpendicular to the radial segment
             float Ephimax = atan(epsilon/r); //maximum error in phi
             
             //"smear" the phi value pseudo-randomly according to a gaussian distribution
