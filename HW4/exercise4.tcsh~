@@ -13,4 +13,4 @@ endif
 
 echo $today
 
-ls -lat | grep "$month $today"
+ls -lat | grep "$month"
